@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0e4d7;
+  margin: 0;
+  padding: 0;
+}
+
+#startScreen, #livingRoomScreen, #askingScreen, #fatherScreen, #gameScreen, #winScreen, #loseScreen, #endScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#mainImage, #livingRoomScreen img, #askingScreen img, #fatherScreen img, #winImage, #loseImage, #oneBD {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#gameTitle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffe0e0;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 5;
+  text-align: center;
+}
+
+#buttonRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #f2a365;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #d17c3f;
+}
+
+#muteBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f2a365;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#muteBtn.active {
+  background-color: #e5a171;
+}
+
+#winScreen, #loseScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+canvas {
+  border: 2px solid #ffe2b7;
+  background-color: #ffe8c6;
+  background-size: cover;
+  background-position: center;
+}
+
+#scoreDisplay {
+  font-size: 24px;
+  color: #333;
+  margin: 10px;
+}
+
+#oneBD {
+  max-width: 150px; 
+  height: auto;     
+  margin-top: 20px; 
+}
+
+#winScreen .message,
+#loseScreen .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #efc175;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 5;
+  text-align: center;
+}
+
+#endScreen img {
+  width: 300px;
+  height: auto;
+}

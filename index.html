@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Coffee & Eid Game</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="muteBtn">Mute</button>
+
+<div id="startScreen">
+  <img src="assets/pictures/main.png" alt="Main screen" id="mainImage" />
+  <h1 id="gameTitle">Coffee & Eid</h1>
+  <button id="startBtn">START</button>
+</div>
+
+<div id="livingRoomScreen" style="display:none;">
+  <img src="assets/pictures/sitting-room.png" alt="Living Room">
+  <button id="talkFatherBtn">Talk to Father</button>
+</div>
+
+<div id="askingScreen" style="display:none;">
+  <img src="assets/pictures/asking.png" alt="Asking">
+  <button id="nextFromAskingBtn">Next</button>
+</div>
+
+<div id="fatherScreen" style="display:none;">
+  <img src="assets/pictures/father.png" alt="Father">
+  <button id="startMiniGameBtn">Play</button>
+</div>
+
+<div id="gameScreen" style="display:none; flex-direction: column; align-items:center;">
+  <div id="scoreDisplay">Score: 0</div>
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+</div>
+
+<div id="winScreen" style="display:none;">
+  <img id="winImage" src="assets/pictures/win.png" alt="Win">
+  <img id="oneBD" src="assets/pictures/one-bd.png" alt="One BD" style="display:none;">
+  <button id="showNextImage">Play Again</button>
+</div>
+
+<div id="loseScreen" style="display:none;">
+  <img id="loseImage" src="assets/pictures/lose.png" alt="Lose">
+  <button id="showNextImageLose">Play Again</button>
+</div>
+
+<audio id="bgMusic" src="assets/pictures/coffee.mp3" loop></audio>
+<audio id="winSound" src="assets/pictures/win.mp3"></audio>
+<audio id="loseSound" src="assets/pictures/lose.mp3"></audio>
+
+<script src="js/game.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -5,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 #startScreen, #livingRoomScreen, #askingScreen, #fatherScreen, #gameScreen, #winScreen, #loseScreen, #endScreen {
   display: flex;
   flex-direction: column;
@@ -13,16 +13,14 @@ body {
   align-items: center;
   height: 100vh;
 }
-
 #mainImage, #livingRoomScreen img, #askingScreen img, #fatherScreen img, #winImage, #loseImage, #oneBD {
   max-width: 80%;
   height: auto;
   margin-bottom: 20px;
 }
-
 #gameTitle {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -33,6 +31,14 @@ body {
   z-index: 5;
   text-align: center;
 }
+#instructionsText {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
 
 #buttonRow {
   display: flex;
@@ -41,7 +47,6 @@ body {
   gap: 15px;
   margin-top: 20px;
 }
-
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -52,11 +57,9 @@ button {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 button:hover {
   background-color: #d17c3f;
 }
-
 #muteBtn {
   position: fixed;
   bottom: 20px;
@@ -69,11 +72,9 @@ button:hover {
   cursor: pointer;
   z-index: 1000;
 }
-
 #muteBtn.active {
   background-color: #e5a171;
 }
-
 #winScreen, #loseScreen {
   display: flex;
   flex-direction: column;
@@ -82,26 +83,22 @@ button:hover {
   position: relative;
   height: 100vh;
 }
-
 canvas {
   border: 2px solid #ffe2b7;
   background-color: #ffe8c6;
   background-size: cover;
   background-position: center;
 }
-
 #scoreDisplay {
   font-size: 24px;
   color: #333;
   margin: 10px;
 }
-
 #oneBD {
   max-width: 150px; 
   height: auto;     
   margin-top: 20px; 
 }
-
 #winScreen .message,
 #loseScreen .message {
   position: absolute;
@@ -117,7 +114,6 @@ canvas {
   z-index: 5;
   text-align: center;
 }
-
 #endScreen img {
   width: 300px;
   height: auto;

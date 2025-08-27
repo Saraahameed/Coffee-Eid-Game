@@ -1,6 +1,6 @@
 # Coffee & Eid Game
 
-## Description
+# Description
 Coffee & Eid is a fun browser-based game.  
 You interact with characters and follow a short story.  
 There is a mini-game where you can score points.  
@@ -31,7 +31,7 @@ The game is made with HTML, CSS, and JavaScript.
 - JavaScript (DOM manipulation and game logic)  
 
 ## Screenshot
-![Game Screenshot](assets/pictures/screenshot.png)
+![Game Screenshot](./assets/pictures/screanshot.png)
 
 ## Next Steps / Stretch Goals
 - Add levels with increasing difficulty.  
